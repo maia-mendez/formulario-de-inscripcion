@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>formulario</title>
+</head>
+<body style="background-color: rgb(251, 242, 211);">
+
+    <h1 style="color: rgb(0, 0, 0); width: 100%;font-size: 200%;text-align: center;font-family: 'Times New Roman', Times, serif;">
+    formulario
+    </h1>
+
+<form action="http://192.168.0.80/bti-7/index.php" method="post" style="background-color: rgb(235, 232, 181);">
+    <fieldset>
+        <legend style="color: rgb(0, 0, 0);">Datos personales</legend>
+
+        <ol><label style="color: rgb(0, 0, 0);">Nombre: </label>
+        <input type="text"; name="Nombre"></ol>
+        <ol><label style="color: rgb(0, 0, 0);">Apellido: </label>
+        <input type="text"; name="Apellido"></ol>
+        <ol><label style="color: rgb(0, 0, 0);">CI: </label>
+         <input type="text"; name="CI"></ol>
+         <ol><label style="color: rgb(0, 0, 0);">Direccion: </label>
+        <input type="text"; name="Direccion"></ol>
+        <ol><label style="color: rgb(0, 0, 0);">Telefono: </label>
+        <input type="text"; name="Telefono"></ol>
+
+        <ol><label style="color: rgb(0, 0, 0);" for="Estado">Estado Civil:</label>
+        <select id="Estado" name="Estado">
+            <Option value="Opciones">Opciones</Option>
+            <option value="Casado/Casada">Casado/Casada</option></ol>
+            <option value="Soltero/Soltera">Soltero/Soltera</option>
+            <option value="divorsiado/Divorsiada">divorsiado/Divorsiada</option>
+        </select>
+        <br><br>
+        <label style="color: rgb(0, 0, 0);">Correo Electronico: </label>
+        <input type="text"; name="Correo">
+        <label style="color: rgb(11, 11, 11);">Edad</label>
+        <input type="text"; name="Edad">
+        <br>
+        <br>
+        <b style="color: rgb(0, 0, 0);">selecione su fecha de Nacimiento</b> <br><br>
+        <input type="date" name="dia"></b><br><br> <!--fecha-->
+        <br>
+
+        <b style="color: black;">Tiene Hijos?</b><br><br>
+        <input type="checkbox" name="Opciones" value="rock"><strong style="color: rgb(0, 0, 0);">Si</strong>
+        <input type="checkbox" name="Opciones" value="pop"><strong style="color: rgb(0, 0, 0);">No</strong>
+        <br>
+
+    </fieldset>
+    <input type="submit" value="enviar">
+</form>
+</body>
+</html>
